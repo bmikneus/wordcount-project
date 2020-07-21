@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<h1>My name is {{ name }} and I'm here to say, I'm gonna count your words in a major way!</h1>
+
+<br />
+I'm from {{state}} and I am learning to make websites with Django!
+
+Here are some things that I like: 
+<br/>
+{% for items in thingsilike %}
+I like {{items}}
+<br/>
+{% endfor %}
+<a href="{% url 'home' %}">Home</a>
